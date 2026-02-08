@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Локальные продукты | Свежие продукты от фермеров</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="header-logo">
+                    <i class="fas fa-seedling"></i>
+                    Локальные продукты
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="header-nav" id="headerNav">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link active">Главная</a>
+                        <a href="contacts.html" class="nav-link">Контакты</a>
+                        <a href="faq.html" class="nav-link">Вопросы</a>
+                    </div>
+                    
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Корзина <span class="cart-count">3</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- HERO SECTION -->
+        <section class="hero-marketplace">
+            <div class="container" style="text-align: center;">
+                <h1 class="title" style="font-size: 3rem; margin-bottom: 20px;">Свежие продукты от местных фермеров</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Заказывайте органические овощи, фрукты, мясо и молочные продукты прямо с фермы. 
+                    Быстрая доставка в течение 24 часов!
+                </p>
+                <a href="#products" class="btn btn-large" style="font-size: 1.2rem;">
+                    <i class="fas fa-shopping-basket"></i> Смотреть продукты
+                </a>
+            </div>
+        </section>
+
+        <!-- ПРЕИМУЩЕСТВА -->
+        <section class="section" style="padding: 60px 0;">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 50px;">Почему выбирают нас</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Экологично</h3>
+                        <p>Все продукты выращены без химикатов и ГМО, только натуральные методы</p>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Быстрая доставка</h3>
+                        <p>Доставляем в течение 24 часов после сбора урожая</p>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Поддержка местных</h3>
+                        <p>Покупая у нас, вы поддерживаете местных фермеров и их семьи</p>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Гарантия качества</h3>
+                        <p>Мы лично проверяем каждую ферму и все продукты</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПРОДУКТЫ -->
+        <section id="products" class="section" style="padding: 60px 0; background: #f8f9fa;">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">Наши продукты</h2>
+                
+                <!-- Фильтры категорий -->
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <span class="category-badge active">Все</span>
+                    <span class="category-badge">Овощи</span>
+                    <span class="category-badge">Фрукты</span>
+                    <span class="category-badge">Мясо</span>
+                    <span class="category-badge">Молочное</span>
+                </div>
+                
+                <!-- Сетка товаров -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px;">
+                    <!-- Товар 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-carrot" style="color: #e67e22;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Морковь свежая</h3>
+                            <p style="color: #666; margin-bottom: 15px;">Собранная сегодня, сладкая и хрустящая</p>
+                            <div class="price">120 ₽/кг</div>
+                            <button class="btn" style="width: 100%;">
+                                <i class="fas fa-cart-plus"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-apple-alt" style="color: #e74c3c;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Яблоки Гренни Смит</h3>
+                            <p style="color: #666; margin-bottom: 15px;">Кисло-сладкие, идеальны для пирогов</p>
+                            <div class="price">200 ₽/кг</div>
+                            <button class="btn" style="width: 100%;">
+                                <i class="fas fa-cart-plus"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-drumstick-bite" style="color: #c0392b;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Куриное филе</h3>
+                            <p style="color: #666; margin-bottom: 15px;">Филе куриной грудки, без кожи</p>
+                            <div class="price">450 ₽/кг</div>
+                            <button class="btn" style="width: 100%;">
+                                <i class="fas fa-cart-plus"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-cheese" style="color: #f39c12;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Домашний сыр</h3>
+                            <p style="color: #666; margin-bottom: 15px;">Свежий фермерский сыр, 400г</p>
+                            <div class="price">350 ₽</div>
+                            <button class="btn" style="width: 100%;">
+                                <i class="fas fa-cart-plus"></i> В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i> Показать все продукты
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- КАК ЭТО РАБОТАЕТ -->
+        <section class="section" style="padding: 60px 0;">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 50px;">Как это работает</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div style="text-align: center;">
+                        <div style="background: var(--primary); color: white; width: 60px; height: 60px; line-height: 60px; border-radius: 50%; font-size: 1.5rem; margin: 0 auto 20px;">
+                            1
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Выбирайте продукты</h3>
+                        <p>Выберите свежие продукты из нашего каталога</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="background: var(--primary); color: white; width: 60px; height: 60px; line-height: 60px; border-radius: 50%; font-size: 1.5rem; margin: 0 auto 20px;">
+                            2
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Оформляйте заказ</h3>
+                        <p>Заполните форму заказа и выберите способ доставки</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="background: var(--primary); color: white; width: 60px; height: 60px; line-height: 60px; border-radius: 50%; font-size: 1.5rem; margin: 0 auto 20px;">
+                            3
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Получайте доставку</h3>
+                        <p>Получите свежие продукты прямо к вашей двери</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-marketplace">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h3 class="footer-title">Локальные продукты</h3>
+                    <p>Свежие продукты от местных фермеров прямо к вашему столу.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="#" style="margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-vk"></i></a>
+                        <a href="#" style="margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-telegram"></i></a>
+                        <a href="#" style="margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Каталог</h3>
+                    <ul>
+                        <li><a href="#">Овощи</a></li>
+                        <li><a href="#">Фрукты</a></li>
+                        <li><a href="#">Мясо</a></li>
+                        <li><a href="#">Молочные продукты</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Помощь</h3>
+                    <ul>
+                        <li><a href="faq.html">Вопросы и ответы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Контакты</h3>
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@localmarket.ru</p>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> г. Москва, ул. Фермерская, 15</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                <p>© 2023 Локальные продукты. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Фильтрация категорий
+        document.querySelectorAll('.category-badge').forEach(badge => {
+            badge.addEventListener('click', function() {
+                document.querySelectorAll('.category-badge').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Добавление в корзину
+        document.querySelectorAll('.product-card .btn').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Товар добавлен в корзину!');
+            });
+        });
+    </script>
+</body>
+</html>
