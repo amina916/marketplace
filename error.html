@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена | Локальные продукты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="header-logo">
+                    <i class="fas fa-seedling"></i>
+                    Локальные продукты
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="header-nav" id="headerNav">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Главная</a>
+                        <a href="contacts.html" class="nav-link">Контакты</a>
+                        <a href="faq.html" class="nav-link">Вопросы</a>
+                    </div>
+                    
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Корзина <span class="cart-count">3</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- СТРАНИЦА 404 -->
+        <div class="error-404">
+            <div class="container">
+                <div class="error-code">404</div>
+                
+                <div class="error-icons">
+                    <i class="fas fa-carrot"></i>
+                    <i class="fas fa-apple-alt"></i>
+                    <i class="fas fa-cheese"></i>
+                </div>
+                
+                <h1 class="error-title">Страница не найдена</h1>
+                
+                <p class="error-message">
+                    Извините, но страница, которую вы ищете, не существует или была перемещена.
+                </p>
+                
+                <p class="error-suggestion">
+                    Возможно, вы ошиблись при вводе адреса или перешли по устаревшей ссылке.
+                </p>
+                
+                <!-- Кнопка возврата -->
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-large">
+                        <i class="fas fa-home"></i> Вернуться на главную
+                    </a>
+                </div>
+                
+                <!-- Альтернативные ссылки -->
+                <div class="alternative-links">
+                    <p>Или перейдите на одну из этих страниц:</p>
+                    <div class="link-grid">
+                        <a href="index.html" class="alt-link">
+                            <i class="fas fa-store"></i>
+                            <span>Главная с продуктами</span>
+                        </a>
+                        
+                        <a href="contacts.html" class="alt-link">
+                            <i class="fas fa-address-book"></i>
+                            <span>Контакты</span>
+                        </a>
+                        
+                        <a href="faq.html" class="alt-link">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Вопросы и ответы</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Поиск -->
+                <div class="error-search">
+                    <p>Или найдите нужную информацию:</p>
+                    <div class="search-box">
+                        <input type="text" placeholder="Что вы ищете?" class="search-input">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i> Найти
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-marketplace">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">Локальные продукты</h3>
+                    <p>Свежие продукты от местных фермеров прямо к вашему столу.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Каталог</h3>
+                    <ul>
+                        <li><a href="index.html">Овощи</a></li>
+                        <li><a href="index.html">Фрукты</a></li>
+                        <li><a href="index.html">Мясо</a></li>
+                        <li><a href="index.html">Молочные продукты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Помощь</h3>
+                    <ul>
+                        <li><a href="faq.html">Вопросы и ответы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Контакты</h3>
+                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@localmarket.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Фермерская, 15</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Локальные продукты. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Поиск на странице 404
+        document.querySelector('.search-btn').addEventListener('click', function() {
+            const query = document.querySelector('.search-input').value;
+            if (query.trim()) {
+                alert('Поиск: "' + query + '"\n\nК сожалению, это демо-версия. В реальном сайте здесь будет поиск по сайту.');
+            }
+        });
+    </script>
+</body>
+</html>
