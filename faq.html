@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Локальные продукты | Вопросы и ответы</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="header-logo">
+                    <i class="fas fa-seedling"></i>
+                    Локальные продукты
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="header-nav" id="headerNav">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Главная</a>
+                        <a href="contacts.html" class="nav-link">Контакты</a>
+                        <a href="faq.html" class="nav-link active">Вопросы</a>
+                    </div>
+                    
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Корзина <span class="cart-count">3</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- ХЛЕБНЫЕ КРОШКИ -->
+        <div class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li>Вопросы и ответы</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- FAQ КОНТЕНТ -->
+        <div class="container">
+            <h1 class="page-title">Часто задаваемые вопросы</h1>
+            <p class="page-subtitle">
+                Не нашли ответ на свой вопрос? <a href="contacts.html">Свяжитесь с нами</a>!
+            </p>
+            
+            <!-- Категории FAQ -->
+            <div class="faq-categories">
+                <button class="category-btn active" data-category="all">Все вопросы</button>
+                <button class="category-btn" data-category="order">Заказ и оплата</button>
+                <button class="category-btn" data-category="delivery">Доставка</button>
+                <button class="category-btn" data-category="products">Продукты</button>
+                <button class="category-btn" data-category="other">Другое</button>
+            </div>
+            
+            <!-- FAQ Аккордеон -->
+            <div class="faq-container">
+                <!-- Вопрос 1 -->
+                <div class="faq-item" data-category="order">
+                    <div class="faq-question">
+                        <span>Как сделать заказ?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Чтобы сделать заказ:</p>
+                        <ol>
+                            <li>Выберите продукты на главной странице</li>
+                            <li>Нажмите кнопку "В корзину"</li>
+                            <li>Перейдите в корзину и нажмите "Оформить заказ"</li>
+                            <li>Заполните контактные данные и выберите способ доставки</li>
+                            <li>Подтвердите заказ</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 2 -->
+                <div class="faq-item" data-category="delivery">
+                    <div class="faq-question">
+                        <span>Сколько стоит доставка?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Стоимость доставки зависит от вашего местоположения:</p>
+                        <ul>
+                            <li>В пределах МКАД: 300 рублей</li>
+                            <li>За МКАД (до 10 км): 500 рублей</li>
+                            <li>Бесплатная доставка при заказе от 2000 рублей</li>
+                        </ul>
+                        <p>Точную стоимость доставки вы увидите при оформлении заказа.</p>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 3 -->
+                <div class="faq-item" data-category="order">
+                    <div class="faq-question">
+                        <span>Какие способы оплаты вы принимаете?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы принимаем следующие способы оплаты:</p>
+                        <ul>
+                            <li>Наличными курьеру</li>
+                            <li>Банковской картой (Visa, MasterCard, Мир)</li>
+                            <li>Онлайн-оплата через Сбербанк Онлайн</li>
+                            <li>Перевод на банковскую карту</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 4 -->
+                <div class="faq-item" data-category="products">
+                    <div class="faq-question">
+                        <span>Насколько свежие ваши продукты?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Все наши продукты собираются фермерами утром в день доставки или накануне вечером.</p>
+                        <p>Мы доставляем продукты в течение 24 часов после сбора, поэтому вы получаете максимально свежие продукты.</p>
+                        <p>Каждый продукт маркируется датой сбора.</p>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 5 -->
+                <div class="faq-item" data-category="delivery">
+                    <div class="faq-question">
+                        <span>Как долго хранятся продукты?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Рекомендуемые сроки хранения:</p>
+                        <ul>
+                            <li>Овощи: 5-7 дней в холодильнике</li>
+                            <li>Фрукты: 3-5 дней при комнатной температуре</li>
+                            <li>Мясо: 2-3 дня в морозилке</li>
+                            <li>Молочные продукты: смотрите на упаковке</li>
+                        </ul>
+                        <p>Мы указываем рекомендуемые сроки хранения на каждой упаковке.</p>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 6 -->
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <span>Можно ли вернуть товар?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете вернуть товар в следующих случаях:</p>
+                        <ul>
+                            <li>Товар поврежден при доставке</li>
+                            <li>Товар не соответствует описанию</li>
+                            <li>Товар испорчен (при условии соблюдения условий хранения)</li>
+                        </ul>
+                        <p>Для возврата свяжитесь с нами в течение 24 часов после получения заказа.</p>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 7 -->
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <span>Как стать поставщиком?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Если вы фермер или производитель и хотите стать нашим поставщиком:</p>
+                        <ol>
+                            <li>Заполните заявку на сайте</li>
+                            <li>Мы свяжемся с вами для обсуждения деталей</li>
+                            <li>Наш специалист посетит ваше хозяйство для оценки качества</li>
+                            <li>После одобрения мы заключаем договор</li>
+                        </ol>
+                        <p>Мы сотрудничаем только с проверенными фермерами, использующими экологичные методы.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Форма для нового вопроса -->
+            <div class="ask-question">
+                <h2>Не нашли ответ на свой вопрос?</h2>
+                <p>Задайте его нам, и мы ответим в течение 24 часов</p>
+                
+                <div class="question-form">
+                    <textarea id="newQuestion" class="form-control" placeholder="Введите ваш вопрос..." rows="3"></textarea>
+                    <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <input type="email" id="questionEmail" class="form-control" placeholder="Ваш email для ответа" style="width: 300px;">
+                        </div>
+                        <button id="submitQuestion" class="btn">
+                            <i class="fas fa-question-circle"></i> Задать вопрос
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER (такой же как на главной) -->
+    <footer class="footer-marketplace">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">Локальные продукты</h3>
+                    <p>Свежие продукты от местных фермеров прямо к вашему столу.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Каталог</h3>
+                    <ul>
+                        <li><a href="index.html#products">Овощи</a></li>
+                        <li><a href="index.html#products">Фрукты</a></li>
+                        <li><a href="index.html#products">Мясо</a></li>
+                        <li><a href="index.html#products">Молочные продукты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Помощь</h3>
+                    <ul>
+                        <li><a href="faq.html">Вопросы и ответы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Контакты</h3>
+                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@localmarket.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Фермерская, 15</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Локальные продукты. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Аккордеон FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const toggle = this.querySelector('.faq-toggle');
+                
+                // Закрываем все остальные
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    if (a !== answer && a.classList.contains('active')) {
+                        a.classList.remove('active');
+                        a.previousElementSibling.querySelector('.faq-toggle').classList.remove('fa-chevron-up');
+                        a.previousElementSibling.querySelector('.faq-toggle').classList.add('fa-chevron-down');
+                    }
+                });
+                
+                // Переключаем текущий
+                answer.classList.toggle('active');
+                toggle.classList.toggle('fa-chevron-up');
+                toggle.classList.toggle('fa-chevron-down');
+            });
+        });
+        
+        // Фильтрация по категориям
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                
+                // Обновляем активную кнопку
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Фильтруем вопросы
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Отправка вопроса
+        document.getElementById('submitQuestion').addEventListener('click', function() {
+            const question = document.getElementById('newQuestion').value;
+            const email = document.getElementById('questionEmail').value;
+            
+            if (!question.trim()) {
+                alert('Пожалуйста, введите ваш вопрос');
+                return;
+            }
+            
+            if (!email.trim()) {
+                alert('Пожалуйста, введите ваш email для ответа');
+                return;
+            }
+            
+            alert('Спасибо за ваш вопрос! Мы ответим вам на email в течение 24 часов.');
+            document.getElementById('newQuestion').value = '';
+            document.getElementById('questionEmail').value = '';
+        });
+    </script>
+</body>
+</html>
